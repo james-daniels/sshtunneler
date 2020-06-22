@@ -16,10 +16,10 @@ var db string
 var coll string
 
 func init() {
-	flag.StringVar(&host, "h", "", "Enter database host to connect to")
-	flag.StringVar(&envir, "e", "", "Enter environment to connect to")
-	flag.StringVar(&db, "db", "", "Enter database to connect to")
-	flag.StringVar(&coll, "c", "", "Enter collection to connect to")
+	flag.StringVar(&host, "h", "localhost", "Enter database host to connect to.")
+	flag.StringVar(&envir, "e", "", "Enter environment to connect to.")
+	flag.StringVar(&db, "db", "", "Enter database to connect to.")
+	flag.StringVar(&coll, "c", "", "Enter collection to connect to.")
 }
 
 func runSSH() {
